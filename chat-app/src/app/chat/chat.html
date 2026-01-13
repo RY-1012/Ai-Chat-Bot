@@ -1,0 +1,46 @@
+<div class="chat-container">
+
+  <div class="header">
+    <h2>💬 AI Realtime Chat</h2>
+  </div>
+  
+  <div class="users-panel">
+  <h4>Online</h4>
+  <div *ngFor="let u of users">🟢 {{u}}</div>
+  </div> 
+
+  <div id="chatBox" class="messages">
+    <div
+      *ngFor="let msg of messages"
+      class="msg"
+      [class.user]="msg.user !== 'ChatGPT 🤖'"
+      [class.bot]="msg.user === 'ChatGPT 🤖'"
+    >
+      <div class="name">{{ msg.user }}</div>
+      <div class="bubble">{{ msg.message }}</div>
+      <div class="time">{{ msg.time }}</div>
+    </div>
+
+    <div *ngIf="aiTyping" class="typing">
+      🤖 ChatGPT is typing...
+    </div>
+  </div>
+
+  <div class="input-area">
+    <input
+      [(ngModel)]="username"
+      placeholder="Your name"
+      class="name-input"
+    />
+
+    <input
+      [(ngModel)]="message"
+      (keyup.enter)="send()"
+      placeholder="Type a message..."
+      class="message-input"
+    />
+
+    <button (click)="send()">Send</button>
+  </div>
+
+</div>
