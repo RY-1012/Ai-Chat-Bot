@@ -58,7 +58,7 @@ chat-server/ → Node.js + Socket.IO backend
 #### ⚙️ Installation
 
 ## 1️⃣ Backend Setup
-  ''''bash
+
   cd chat-server
   npm install
 
@@ -67,7 +67,7 @@ chat-server/ → Node.js + Socket.IO backend
   node server.js
 
 ## 2️⃣ Frontend Setup
-''''bash
+
 cd chat-app
 npm install
 ng serve
