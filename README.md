@@ -60,6 +60,7 @@ chat-server/ → Node.js + Socket.IO backend
 ## 1️⃣ Backend Setup
 
   cd chat-server
+  
   npm install
 
   OPENAI_API_KEY=your_openai_api_key_here
@@ -69,7 +70,9 @@ chat-server/ → Node.js + Socket.IO backend
 ## 2️⃣ Frontend Setup
 
 cd chat-app
+
 npm install
+
 ng serve
 
 
