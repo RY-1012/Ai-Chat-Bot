@@ -60,7 +60,6 @@ chat-server/ → Node.js + Socket.IO backend
 
 1️⃣ Backend Setup
 
-```bash
 cd chat-server
 npm install
 
