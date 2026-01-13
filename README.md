@@ -76,6 +76,4 @@ npm install
 ng serve
 
 
-open in browser --------   http://localhost:4200
-
-
+### open in browser --------   http://localhost:4200
