@@ -1,4 +1,4 @@
-# 🚀 Real-Time Chat Application with ChatGPT  
+# 🚀 Real-Time Chat Application  
 **Angular + Node.js + Socket.IO + OpenAI**
 
 A modern real-time web chat application where users can talk with each other and also with **ChatGPT AI** inside the same chat room.
